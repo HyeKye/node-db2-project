@@ -20,7 +20,7 @@ const checkCarId = async (req, res, next) => {
 const checkCarPayload = (req, res, next) => {
   if (!req.body.vin) return next({ 
     status: 400, 
-    message: `vin is missing`
+    message: 'vin is missing'
   })
   if (!req.body.make) return next({ 
     status: 400, 
